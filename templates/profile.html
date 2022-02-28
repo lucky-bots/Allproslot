@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{ info['username'] }}
+{% endblock %}
+
+{% block head %}
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">{{ info['username'] }}.</h1>
+        <p class="lead">Email:
+            {{ info['email'] }}
+            <br>
+            Account created on: {{ info['registeration'] }}
+        </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+{% endblock %}
